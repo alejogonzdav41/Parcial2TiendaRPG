@@ -20,12 +20,34 @@ namespace RPGtienda
                 .SetName("CreateItem_Supply");
         }
 
+
         [TestCaseSource(nameof(ItemsData))]
         public void CreateItem(Item item)
         {
             Assert.That(item.Name, Is.Not.Null);
             Assert.That(item.Name, Is.Not.EqualTo(string.Empty));
             Assert.That(item.Price, Is.GreaterThan(0));
+        }
+
+
+        // Creación de la tienda
+
+        private static IEnumerable<TestCaseData> StoreData()
+        {
+            Store store = new Store();
+
+            Item sword = new Item("Sword", 100, ItemCategory.Weapon);
+
+            store.AddItem(sword, 5);
+
+            yield return new TestCaseData(store, sword)
+                .SetName("Store_AddItem");
+        }
+
+        [TestCaseSource(nameof(StoreData))]
+        public void AddItemToStore(Store store, Item item)
+        {
+            Assert.That(store.GetStock(item), Is.GreaterThan(0));
         }
 
 
