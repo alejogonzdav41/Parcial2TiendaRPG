@@ -6,7 +6,7 @@ namespace RPGtienda
     [TestFixture]
     public class Tests
     {
-        // CREACIÓN DE ITEMS
+        // Creación de items
 
         private static IEnumerable<TestCaseData> ItemsData()
         {
@@ -65,6 +65,84 @@ namespace RPGtienda
         {   
             Assert.That(player.Gold, Is.GreaterThanOrEqualTo(0));
             Assert.That(player.Inventory, Is.Not.Null);
+        }
+
+        // Error en en la compra por falta de items en stock
+
+        private static IEnumerable<TestCaseData> PurchaseFailStockData()
+        {
+            Store store = new Store();
+            Player player = new Player(500);
+
+            Item sword = new Item("Sword", 100, ItemCategory.Weapon);
+
+            store.AddItem(sword, 0);
+
+            List<PurchaseItem> purchase = new List<PurchaseItem>();
+            purchase.Add(new PurchaseItem(sword, 1));
+
+            yield return new TestCaseData(store, player, purchase)
+                .SetName("Purchase_Fail_NoStock");
+        }
+
+        [TestCaseSource(nameof(PurchaseFailStockData))]
+        public void BuyItemFailStock(Store store, Player player, List<PurchaseItem> purchase)
+        {
+            bool result = store.Buy(player, purchase);
+
+            Assert.That(result, Is.False);
+        }
+
+        // Error en l compra por falta de oro
+
+        private static IEnumerable<TestCaseData> PurchaseFailMoneyData()
+        {
+            Store store = new Store();
+            Player player = new Player(10);
+
+            Item sword = new Item("Sword", 100, ItemCategory.Weapon);
+
+            store.AddItem(sword, 5);
+
+            List<PurchaseItem> purchase = new List<PurchaseItem>();
+            purchase.Add(new PurchaseItem(sword, 1));
+
+            yield return new TestCaseData(store, player, purchase)
+                .SetName("Purchase_Fail_NotEnoughMoney");
+        }
+
+        [TestCaseSource(nameof(PurchaseFailMoneyData))]
+        public void BuyItemFailMoney(Store store, Player player, List<PurchaseItem> purchase)
+        {
+            bool result = store.Buy(player, purchase);
+
+            Assert.That(result, Is.False);
+        }
+
+        // Compra exitosa
+        private static IEnumerable<TestCaseData> PurchaseSuccessData()
+        {
+            Store store = new Store();
+            Player player = new Player(500);
+
+            Item sword = new Item("Sword", 100, ItemCategory.Weapon);
+
+            store.AddItem(sword, 5);
+
+            List<PurchaseItem> purchase = new List<PurchaseItem>();
+            purchase.Add(new PurchaseItem(sword, 1));
+
+            yield return new TestCaseData(store, player, purchase)
+                .SetName("Purchase_Success");
+        }
+
+        [TestCaseSource(nameof(PurchaseSuccessData))]
+        public void BuyItemSuccess(Store store, Player player, List<PurchaseItem> purchase)
+        {
+            bool result = store.Buy(player, purchase);
+
+            Assert.That(result);
+            Assert.That(player.Gold, Is.LessThan(500));
         }
 
     }
