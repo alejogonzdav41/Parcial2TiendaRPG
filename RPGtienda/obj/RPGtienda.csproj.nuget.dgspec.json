@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\alejo\\Documents\\GitHub\\Parcial2TiendaRPG\\RPGtienda\\RPGtienda.csproj": {}
+    "C:\\Users\\Usuario\\Desktop\\Parcial2TiendaRPG\\RPGtienda\\RPGtienda.csproj": {}
   },
   "projects": {
-    "C:\\Users\\alejo\\Documents\\GitHub\\Parcial2TiendaRPG\\RPGtienda\\RPGtienda.csproj": {
+    "C:\\Users\\Usuario\\Desktop\\Parcial2TiendaRPG\\RPGtienda\\RPGtienda.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\alejo\\Documents\\GitHub\\Parcial2TiendaRPG\\RPGtienda\\RPGtienda.csproj",
+        "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\Parcial2TiendaRPG\\RPGtienda\\RPGtienda.csproj",
         "projectName": "RPGtienda",
-        "projectPath": "C:\\Users\\alejo\\Documents\\GitHub\\Parcial2TiendaRPG\\RPGtienda\\RPGtienda.csproj",
-        "packagesPath": "C:\\Users\\alejo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\alejo\\Documents\\GitHub\\Parcial2TiendaRPG\\RPGtienda\\obj\\",
+        "projectPath": "C:\\Users\\Usuario\\Desktop\\Parcial2TiendaRPG\\RPGtienda\\RPGtienda.csproj",
+        "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Usuario\\Desktop\\Parcial2TiendaRPG\\RPGtienda\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\alejo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -44,7 +44,7 @@
           "auditLevel": "low",
           "auditMode": "all"
         },
-        "SdkAnalysisLevel": "10.0.100"
+        "SdkAnalysisLevel": "10.0.200"
       },
       "frameworks": {
         "net10.0": {
@@ -87,7 +87,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.103/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.200/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",

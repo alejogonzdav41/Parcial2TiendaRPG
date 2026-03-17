@@ -18,6 +18,9 @@ namespace RPGtienda
 
             yield return new TestCaseData(new Item("Potion", 50, ItemCategory.Supply))
                 .SetName("CreateItem_Supply");
+
+            yield return new TestCaseData(new Item("Baston", 75, ItemCategory.Accessory))
+                .SetName("CreateItem_Accesory");
         }
 
 
@@ -37,11 +40,21 @@ namespace RPGtienda
             Store store = new Store();
 
             Item sword = new Item("Sword", 100, ItemCategory.Weapon);
+            Item armor = new Item("Armor", 200, ItemCategory.Armor);
+            Item potion = new Item("Potion", 50, ItemCategory.Supply);
 
             store.AddItem(sword, 5);
+            store.AddItem(armor, 3);
+            store.AddItem(potion, 10);
 
             yield return new TestCaseData(store, sword)
-                .SetName("Store_AddItem");
+                .SetName("Store_AddWeapon");
+
+            yield return new TestCaseData(store, armor)
+                .SetName("Store_AddArmor");
+
+            yield return new TestCaseData(store, potion)
+                .SetName("Store_AddSupply");
         }
 
         [TestCaseSource(nameof(StoreData))]
@@ -145,5 +158,60 @@ namespace RPGtienda
             Assert.That(player.Gold, Is.LessThan(500));
         }
 
+        // Compra Multiple
+        private static IEnumerable<TestCaseData> PurchaseMultipleData()
+        {
+            Store store = new Store();
+            Player player = new Player(500);
+
+            Item sword = new Item("Sword", 100, ItemCategory.Weapon);
+            Item potion = new Item("Potion", 50, ItemCategory.Supply);
+
+            store.AddItem(sword, 5);
+            store.AddItem(potion, 5);
+
+            List<PurchaseItem> purchase = new List<PurchaseItem>();
+            purchase.Add(new PurchaseItem(sword, 1));
+            purchase.Add(new PurchaseItem(potion, 2));
+
+            yield return new TestCaseData(store, player, purchase)
+                .SetName("Purchase_MultipleItems");
+        }
+
+        [TestCaseSource(nameof(PurchaseMultipleData))]
+        public void BuyMultipleItems(Store store, Player player, List<PurchaseItem> purchase)
+        {
+            bool result = store.Buy(player, purchase);
+
+            Assert.That(result);
+            Assert.That(player.Gold, Is.LessThan(500));
+        }
+
+        // Item comprado al inventariod el personaje
+
+        private static IEnumerable<TestCaseData> PlayerInventoryUpdateData()
+        {
+            Store store = new Store();
+            Player player = new Player(500);
+
+            Item sword = new Item("Sword", 100, ItemCategory.Weapon);
+
+            store.AddItem(sword, 5);
+
+            List<PurchaseItem> purchase = new List<PurchaseItem>();
+            purchase.Add(new PurchaseItem(sword, 1));
+
+            yield return new TestCaseData(store, player, purchase, sword)
+                .SetName("PlayerInventory_UpdatePurchase");
+        }
+
+        [TestCaseSource(nameof(PlayerInventoryUpdateData))]
+        public void PlayerInventoryUpdate(Store store, Player player, List<PurchaseItem> purchase, Item item)
+        {
+            bool result = store.Buy(player, purchase);
+
+            Assert.That(result);
+            Assert.That(player.Inventory, Is.Not.Null);
+        }
     }
 }
