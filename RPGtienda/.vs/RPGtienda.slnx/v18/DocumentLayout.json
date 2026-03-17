@@ -1,0 +1,139 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Usuario\\Desktop\\Parcial2TiendaRPG\\RPGtienda\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E1BA07DA-14F6-4C15-80E1-55E83BF7049C}|RPGtienda.csproj|c:\\users\\usuario\\desktop\\parcial2tiendarpg\\rpgtienda\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1BA07DA-14F6-4C15-80E1-55E83BF7049C}|RPGtienda.csproj|solutionrelative:item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1BA07DA-14F6-4C15-80E1-55E83BF7049C}|RPGtienda.csproj|c:\\users\\usuario\\desktop\\parcial2tiendarpg\\rpgtienda\\inventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1BA07DA-14F6-4C15-80E1-55E83BF7049C}|RPGtienda.csproj|solutionrelative:inventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1BA07DA-14F6-4C15-80E1-55E83BF7049C}|RPGtienda.csproj|c:\\users\\usuario\\desktop\\parcial2tiendarpg\\rpgtienda\\store.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1BA07DA-14F6-4C15-80E1-55E83BF7049C}|RPGtienda.csproj|solutionrelative:store.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1BA07DA-14F6-4C15-80E1-55E83BF7049C}|RPGtienda.csproj|c:\\users\\usuario\\desktop\\parcial2tiendarpg\\rpgtienda\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1BA07DA-14F6-4C15-80E1-55E83BF7049C}|RPGtienda.csproj|solutionrelative:player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1BA07DA-14F6-4C15-80E1-55E83BF7049C}|RPGtienda.csproj|c:\\users\\usuario\\desktop\\parcial2tiendarpg\\rpgtienda\\purchaseitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1BA07DA-14F6-4C15-80E1-55E83BF7049C}|RPGtienda.csproj|solutionrelative:purchaseitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1BA07DA-14F6-4C15-80E1-55E83BF7049C}|RPGtienda.csproj|c:\\users\\usuario\\desktop\\parcial2tiendarpg\\rpgtienda\\itemcategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1BA07DA-14F6-4C15-80E1-55E83BF7049C}|RPGtienda.csproj|solutionrelative:itemcategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1BA07DA-14F6-4C15-80E1-55E83BF7049C}|RPGtienda.csproj|c:\\users\\usuario\\desktop\\parcial2tiendarpg\\rpgtienda\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1BA07DA-14F6-4C15-80E1-55E83BF7049C}|RPGtienda.csproj|solutionrelative:unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Store.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\Parcial2TiendaRPG\\RPGtienda\\Store.cs",
+              "RelativeDocumentMoniker": "Store.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\Parcial2TiendaRPG\\RPGtienda\\Store.cs",
+              "RelativeToolTip": "Store.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-17T01:44:56.951Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PurchaseItem.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\Parcial2TiendaRPG\\RPGtienda\\PurchaseItem.cs",
+              "RelativeDocumentMoniker": "PurchaseItem.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\Parcial2TiendaRPG\\RPGtienda\\PurchaseItem.cs",
+              "RelativeToolTip": "PurchaseItem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-17T01:44:47.078Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Player.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\Parcial2TiendaRPG\\RPGtienda\\Player.cs",
+              "RelativeDocumentMoniker": "Player.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\Parcial2TiendaRPG\\RPGtienda\\Player.cs",
+              "RelativeToolTip": "Player.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-17T01:41:08.066Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Inventory.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\Parcial2TiendaRPG\\RPGtienda\\Inventory.cs",
+              "RelativeDocumentMoniker": "Inventory.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\Parcial2TiendaRPG\\RPGtienda\\Inventory.cs",
+              "RelativeToolTip": "Inventory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-17T01:40:53.277Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Item.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\Parcial2TiendaRPG\\RPGtienda\\Item.cs",
+              "RelativeDocumentMoniker": "Item.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\Parcial2TiendaRPG\\RPGtienda\\Item.cs",
+              "RelativeToolTip": "Item.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-17T01:40:18.253Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ItemCategory.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\Parcial2TiendaRPG\\RPGtienda\\ItemCategory.cs",
+              "RelativeDocumentMoniker": "ItemCategory.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\Parcial2TiendaRPG\\RPGtienda\\ItemCategory.cs",
+              "RelativeToolTip": "ItemCategory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-17T01:40:07.241Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UnitTest1.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\Parcial2TiendaRPG\\RPGtienda\\UnitTest1.cs",
+              "RelativeDocumentMoniker": "UnitTest1.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\Parcial2TiendaRPG\\RPGtienda\\UnitTest1.cs",
+              "RelativeToolTip": "UnitTest1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-17T01:38:49.418Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
