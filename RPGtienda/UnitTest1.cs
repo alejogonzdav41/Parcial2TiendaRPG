@@ -50,7 +50,22 @@ namespace RPGtienda
             Assert.That(store.GetStock(item), Is.GreaterThan(0));
         }
 
+        // Creación de personaje
+        private static IEnumerable<TestCaseData> PlayerData()
+        {
+            yield return new TestCaseData(new Player(100))
+                .SetName("CreatePlayer_100Gold");
 
+            yield return new TestCaseData(new Player(500))
+                .SetName("CreatePlayer_500Gold");
+        }
+
+        [TestCaseSource(nameof(PlayerData))]
+        public void CreatePlayer(Player player)
+        {   
+            Assert.That(player.Gold, Is.GreaterThanOrEqualTo(0));
+            Assert.That(player.Inventory, Is.Not.Null);
+        }
 
     }
 }
