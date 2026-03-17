@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RPGtienda")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+08ef7ab71f91a97059ef82cb5eed640ee1843324")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+279e44d7b337026247d1f11fb803dd551afb4685")]
 [assembly: System.Reflection.AssemblyProductAttribute("RPGtienda")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RPGtienda")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
