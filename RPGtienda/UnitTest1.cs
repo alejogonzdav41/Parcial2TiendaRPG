@@ -7,7 +7,6 @@ namespace RPGtienda
     public class Tests
     {
         // Creación de items
-
         private static IEnumerable<TestCaseData> ItemsData()
         {
             yield return new TestCaseData(new Item("Sword", 100, ItemCategory.Weapon))
@@ -31,7 +30,6 @@ namespace RPGtienda
             Assert.That(item.Name, Is.Not.EqualTo(string.Empty));
             Assert.That(item.Price, Is.GreaterThan(0));
         }
-
 
         // Creación de la tienda
 
@@ -161,29 +159,45 @@ namespace RPGtienda
         // Compra Multiple
         private static IEnumerable<TestCaseData> PurchaseMultipleData()
         {
-            Store store = new Store();
+            Store store1 = new Store();
+            Store store2 = new Store();
             Player player = new Player(500);
 
             Item sword = new Item("Sword", 100, ItemCategory.Weapon);
             Item potion = new Item("Potion", 50, ItemCategory.Supply);
 
-            store.AddItem(sword, 5);
-            store.AddItem(potion, 5);
+            store1.AddItem(sword, 5);
 
-            List<PurchaseItem> purchase = new List<PurchaseItem>();
-            purchase.Add(new PurchaseItem(sword, 1));
-            purchase.Add(new PurchaseItem(potion, 2));
+            store2.AddItem(potion, 5);
 
-            yield return new TestCaseData(store, player, purchase)
-                .SetName("Purchase_MultipleItems");
+              List<PurchaseItem> purchase1 = new List<PurchaseItem>()
+              {
+               new PurchaseItem(sword, 1)
+              };
+
+            List<PurchaseItem> purchase2 = new List<PurchaseItem>()
+            {
+             new PurchaseItem(potion, 2)
+            };
+
+            yield return new TestCaseData(store1, store2, player, purchase1, purchase2)
+                .SetName("Purchase_MultipleStores");
         }
 
         [TestCaseSource(nameof(PurchaseMultipleData))]
-        public void BuyMultipleItems(Store store, Player player, List<PurchaseItem> purchase)
+        public void BuyMultipleItems_TwoStores(
+            Store store1,
+            Store store2,
+            Player player,
+            List<PurchaseItem> purchase1,
+            List<PurchaseItem> purchase2)
         {
-            bool result = store.Buy(player, purchase);
+            bool result1 = store1.Buy(player, purchase1);
+            bool result2 = store2.Buy(player, purchase2);
 
-            Assert.That(result);
+            Assert.That(result1);
+            Assert.That(result2);
+
             Assert.That(player.Gold, Is.LessThan(500));
         }
 
@@ -213,5 +227,7 @@ namespace RPGtienda
             Assert.That(result);
             Assert.That(player.Inventory, Is.Not.Null);
         }
+
+
     }
 }
